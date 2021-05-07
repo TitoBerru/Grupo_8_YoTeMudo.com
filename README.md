@@ -1,5 +1,5 @@
 # ProyectoIntegrador
-Proyecto de Digital House Integrador
+Proyecto de Digital House Integrador Grupo 8
 
 Temática y descripción del sitio:
 
