@@ -5,17 +5,17 @@ Temática y descripción del sitio:
 El sitio tendrá la finalidad de vender servicios de mudanzas a medida del consumidor.
 
 Publico objetivo:
-Persona de entre 18 a 65 años.
+Personas de entre 18 a 65 años.
 
-Listado de 5 páginas referentes en las que se basa su proyecto.
+Listado de 5 páginas referentes en las que se basa su proyecto:
 
-https://www.beetrack.com/es/blog/live-tracking
-https://retroflet.com.ar/
-https://fletalo.com.ar/
-https://transportesargentinos.com.ar/
-https://silvertrans.com.ar/
+https://www.beetrack.com/es/blog/live-tracking <br>
+https://retroflet.com.ar/ <br>
+https://fletalo.com.ar/ <br>
+https://transportesargentinos.com.ar/ <br>
+https://silvertrans.com.ar/ <br>
 
-Listado del grupo con una breve descripción de cada uno
+Listado del grupo con una breve descripción de cada uno:<br>
 
 Hernan Miranda:
 Licenciado en Administración (UBA). 
