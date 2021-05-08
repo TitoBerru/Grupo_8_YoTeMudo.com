@@ -17,19 +17,19 @@ https://silvertrans.com.ar/ <br>
 
 Listado del grupo con una breve descripción de cada uno:<br>
 
-Hernan Miranda:
+<B>Hernan Miranda</B>:
 Licenciado en Administración (UBA). 
 Tenis, hacer actividades deportivas y disfruto hablar de series viejas que haya visto, como Maxwell Smart o DB.
 
-Juan Carlos Mejías:
+<B>Juan Carlos Mejías</B>:
 Administración de Aduanas. 
 Amante de la música y los deportes. Me gusta la informática, reparar computadoras.
 
-Hector Berrutti:
+<B>Hector Berrutti</B>:
 Comercio Int. Adm de Empresas. 
 Hincha de River, un apasionado de las nuevas tecnologías, el surf, skate, karate y el fernet (cerveza ipa también)
 
-Gloria Zoldano:
+<B>Gloria Zoldano</B>:
 Ingeniera Química. 
 Curiosa,  por lo que me interesan una gran diversidad de cosas: matemáticas, música, programación neurolingüística, calidad
 
