@@ -18,19 +18,19 @@ https://silvertrans.com.ar/
 Listado del grupo con una breve descripción de cada uno
 
 Hernan Miranda:
-Licenciado en Administración (UBA)
+Licenciado en Administración (UBA). 
 Tenis, hacer actividades deportivas y disfruto hablar de series viejas que haya visto, como Maxwell Smart o DB.
 
 Juan Carlos Mejías:
-Administración de Aduanas
+Administración de Aduanas. 
 Amante de la música y los deportes. Me gusta la informática, reparar computadoras.
 
 Hector Berrutti:
-Comercio Int. Adm de Empresas
+Comercio Int. Adm de Empresas. 
 Hincha de River, un apasionado de las nuevas tecnologías, el surf, skate, karate y el fernet (cerveza ipa también)
 
 Gloria Zoldano:
-Ingeniera Química
+Ingeniera Química. 
 Curiosa,  por lo que me interesan una gran diversidad de cosas: matemáticas, música, programación neurolingüística, calidad
 
 Link del tablero de trabajo en donde se encuentran trabajando
