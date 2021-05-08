@@ -2,12 +2,13 @@
 Proyecto de Digital House Integrador Grupo 8
 
 Temática y descripción del sitio:
-El sitio tendrá la finalidad de vender servicio de mudanzas a medida del consumidor.
+El sitio tendrá la finalidad de vender servicios de mudanzas a medida del consumidor.
 
 Publico objetivo:
 Persona de entre 18 a 65 años.
 
 Listado de 5 páginas referentes en las que se basa su proyecto.
+
 https://www.beetrack.com/es/blog/live-tracking
 https://retroflet.com.ar/
 https://fletalo.com.ar/
@@ -30,7 +31,7 @@ Hincha de River, un apasionado de las nuevas tecnologías, el surf, skate, karat
 
 Gloria Zoldano:
 Ingeniera Química
-Curiosa por lo que me interesan una gran diversidad de cosas: matemáticas, música, programación neurolingüística, calidad
+Curiosa,  por lo que me interesan una gran diversidad de cosas: matemáticas, música, programación neurolingüística, calidad
 
 Link del tablero de trabajo en donde se encuentran trabajando
-Proyecto DH
+https://trello.com/b/nmx8aNPS/proyecto-dh
