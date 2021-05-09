@@ -9,11 +9,11 @@ Personas de entre 18 a 65 años.
 
 Listado de 5 páginas referentes en las que se basa su proyecto:
 
-https://www.beetrack.com/es/blog/live-tracking <br>
-https://retroflet.com.ar/ <br>
-https://fletalo.com.ar/ <br>
-https://transportesargentinos.com.ar/ <br>
-https://silvertrans.com.ar/ <br>
+https://www.beetrack.com/es/blog/live-tracking <br> = fue elegido porque muestra como ofrecen el servicio específico de mudanzas y las imágenes.
+https://retroflet.com.ar/ <br> = fue elegido por cómo están distribuidos los precios por servicio.
+https://fletalo.com.ar/ <br> = fue elegido por la simplesa y estética de la página.
+https://transportesargentinos.com.ar/ <br> = nos dio la idea de la mudanza por pasos.
+https://silvertrans.com.ar/ <br> = por la estética de la página.
 
 Listado del grupo con una breve descripción de cada uno:<br>
 
