@@ -1,6 +1,7 @@
 # ProyectoIntegrador
 Proyecto de Digital House Integrador Grupo 8
 
+
 Temática y descripción del sitio:
 El sitio tendrá la finalidad de vender servicios de mudanzas a medida del consumidor.
 
