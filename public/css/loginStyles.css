@@ -10,7 +10,8 @@ body {
 
 .background{
     /* background-color: #29d1a7; */
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    background:linear-gradient(to top,#88694D,transparent);
 }
 
 .centrado {
