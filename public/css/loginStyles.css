@@ -91,6 +91,21 @@ body {
 .otros-accesos a{
     text-decoration: none;
 }
+.footer{
+    margin-top: 20px;
+}
+.footer img{
+    width: 35px;
+    height: 30px;
+  }
+  .redesSocialesFooter{
+    display:flex;
+    justify-content: center;
+    margin-top: 65px;
+  }
+  .rrss{
+    display: flex;
+  }
 
 @media (max-width:992px) {
     .centrado{

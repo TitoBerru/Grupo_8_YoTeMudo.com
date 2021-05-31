@@ -3,7 +3,9 @@
     box-sizing: border-box;   
   }
   /* -------------------HEADER------------------ */
- 
+ .body{
+  font-family: Montserrat-Light;
+ }
  .headerMainNav{
   display: flex; 
  }
@@ -116,6 +118,19 @@
       text-align: center;
       color: black;
       font-weight: bold;    
+}
+/* ----FOOTER ----*/
+
+.footer img{
+  width: 35px;
+  height: 30px;
+}
+.redesSocialesFooter{
+  display:flex;
+  justify-content: center;
+}
+.rrss{
+  display: flex;
 }
 
 /* media querys del main */

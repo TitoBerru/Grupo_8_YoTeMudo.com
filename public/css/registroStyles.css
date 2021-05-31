@@ -136,7 +136,17 @@ article{
     font-size: 18px;
     width: 100px;
 }
-
+.footer img{
+    width: 35px;
+    height: 30px;
+  }
+  .redesSocialesFooter{
+    display:flex;
+    justify-content: center;
+  }
+  .rrss{
+    display: flex;
+}
 @media screen and (max-widht:1100px) {
     form {
         width: 50%;
