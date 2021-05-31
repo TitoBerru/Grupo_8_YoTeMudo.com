@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoTeMudo Registro</title>
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!--    Font awesome  -->
+    <script src="https://kit.fontawesome.com/29db22af69.js" crossorigin="anonymous"></script>
+
+    <!-- Enlace con CCS-->
     <link rel="stylesheet" href="/css/registroStyles.css">
-    <title>Formulario Yo te Mudo</title>
 </head>
-<body>
-    <header>
-
-    </header>
-    <main>
-        <article>
-        <h1>
-            Formulario de Registro
-        </h1>
-        <form>
-
-            <div class="contenedor">
-                <div class="formulario-nombre">
-                    <label> Nombres</label>
-                    <input type="text" name="nombre" size="30">
-                </div><br>
-
-                <div class="formulario-apellido">
-                    <label>Apellidos </label>
-                    <input type="text" name="nombre" size="30">
-                </div><br>
-
-                <div class="formulario-telefono">
-                    <label>Telefono </label>
-                    <input type="text" name="number" size="30">
-                </div><br>
-
-                <div class="formulario-direccion">
-                    <label> Dirección</label>
-                    <input type="text" name="nombre" size="30">
-                </div><br>
-
-                <div class="formulario-email">
-                    <label>Correo</label>
-                    <input type="text" name="email" size="30">
-                </div><br>
-
-
-                <div class="privacidad">
-                    <div class="checkbox">
-                        <input type="checkbox" required>
-                    </div>
-                    <div class="frase">
-                        <label> He leido y acepto la politica de privacidad</label>
-                    </div>   
-                </div>
-
-                
-                <div class="button-container">
-                 <button type="submit">Cancelar</button>
-                    <br>
-
-
-                <div class="button-container-dos">
-                        <button type="submit">Enviar</button>
-                </div>
-               </div>
-        </form>
-    </article>
-
-
-
-
-    </main>
-
     
-
+    <body>
+        <header>
+            <div class="logoyotemudo">
+                <img id= "your" width="250" height="55" src= '/img/your-logo.png'alt= 'Imagen de logo'></img>
+            </div>
+        </header>
+        <div class="content">
+            <h2 class="logo">Solicitud de <span class="logo2"> Registro </span></h2>
+        <div class="formulario_entero">
+            <div class="formulario_de_contacto">
+                <h1> Datos de usuario </h1>
+                <form action="">
+                    <p>
+                        <label for="NombreCompleto">Nombre Completo</label>
+                        <input type="text" name="NombreCompleto">
+                    </p>
+                    <p>
+                        <label for="EMAIL">EMAIL</label>
+                        <input type="text" name="email">
+                    </p>
+                    <p>
+                        <label for="telefono">TELEFONO</label>
+                        <input type="tel" name"telefono">
+                    </p>
+                    <p>
+                        <label for="password">Contraseña</label>
+                        <input type="password" "password">
+                    </p>
+                    
+                        <button type="submit">ENVIAR</button>
+                    </p>
+                </form>
+            </div>
+            <div class="formulario_de_info">
+                <h4>SOBRE NOSOTROS</h4>
+                <ul>
+                    <li> <i class="fas fa-map-marker-alt"> Juan Agustin Lorca 24</i> </li>
+                    <li> <i class="fas fa-phone-"> 011 4682 9857</i></li>
+                    <li> <i class="fas fa-envelope"> contacto@yotemudo.com</i></li>
+                </ul>
+                <p>
+                    Desde hace más 10 años que YoTeMudo.com esta con vos, somos EXPERTOS EN MUDANZAS.
+                </p>
+                <p>
+                    YoTeMudo.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="redesSocialesFooter">
+          
+          <div class ="rrss"><img src="/img/facebook.png" class="logoFacebook"/></div>
+          <div class="rrss"><img src="/img/twitter.png" class="logoTwitter"/></div>
+          <div class="rrss"><img src="/img/linkedin.png" class="logoFacebook"/></div>  
+        </div>  
+      </footer>
 </body>
-
 </html>
