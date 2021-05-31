@@ -1,0 +1,190 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Montserrat-Light;
+    background: url(/fuentes/imagen-home.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    max-width: 100vw;
+    color:#000000;
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(/fuentes/Montserrat-Light.ttf) format('truetype');
+}
+
+h2{
+    text-align: center;
+}
+.contenedor01{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: space-around;
+    gap: 25px;
+    margin: 15px 0;
+    padding: 40px;
+}
+.presentacion{
+    display:flex;
+}
+
+.logo{
+    margin-left: 0;
+}
+.botones{
+    align-content: center;
+}
+.sub-boton{
+    position:relative;
+    padding:1em 1.5em;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    outline:0;
+    font-size:18px;
+    margin: .5em .8em;
+    font-weight: 600;
+}
+
+.sub-boton:after,
+.sub-boton:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color:#16a085;
+    transition:all .3s ease;
+    transform:scale(0.85)
+}
+.sub-boton:hover:before{
+    top:0;
+    transform:scale(1)
+}
+.sub-boton:hover:after{
+    transform:scale(1)
+}
+
+.telefono{
+   color: transparent;
+   align-self:center;
+}
+.contenedor02{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.conjunto{
+    padding-right: 10em;
+    margin:0;
+}
+
+.invitar{
+    margin-bottom:5vw;
+}
+
+.expertos{
+    margin:0;
+    width:15px;
+    align-content: center;
+    color:#ffffff;
+    font-size: 1.5em;
+    padding-right: em;
+}
+@media (max-width:670px){
+    body{
+        background:linear-gradient(to top,rgba(190, 179, 18, 0.87),transparent);
+    }
+}
+@media (max-width: 950px) {
+    .contenedor01{
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-content: center;
+        gap: 1.5em;
+        margin: 15px 0;
+        padding: 0.5em; 
+    }
+    .sub-boton{
+        color:#000000;
+        font-weight: 800;
+    }
+    .telefono{
+        font-size: 2em;
+    }
+    
+    .presentacion{
+        flex-direction: column;
+    }
+    .contenedor02 {
+        justify-content: space-around;
+        flex-direction: column;
+        display:flex;
+        align-content: center;
+    }
+    .expertos{
+        order:-1;
+        width:auto;
+        color:#065848;
+        padding: 0.5em;
+    }
+    .conjunto{
+        padding-right: 0em;
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        justify-content: space-between;
+    }
+    .invitar{
+        margin-bottom:0vw;
+        align-self: center;
+        width:20em;
+    }
+    .frase-video{
+        color:#000000;
+    }
+    .video{
+        align-content: center;
+        order:-1;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1260px){
+    .contenedor02 {
+        justify-content: space-around;
+        flex-direction: column;
+        display:flex;
+        align-content: center;
+    }
+    .expertos{
+        order:-1;
+        width:auto;
+        color:#065848;
+        padding: 2em;
+    }
+    .conjunto{
+        padding-right: 0em;
+        display:flex;
+        margin:0;
+        justify-content: space-between;
+    }
+    .invitar{
+        margin-bottom:0vw;
+        align-self: center;
+        width:20em;
+    }
+    .frase-video{
+        color:#ffffff;
+    }
+    .video{
+        align-content: center;
+        order:-1;
+    }
+}
