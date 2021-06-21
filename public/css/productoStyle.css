@@ -3,15 +3,63 @@
     box-sizing: border-box;   
   }
   /* -------------------HEADER------------------ */
- .body{
-  font-family: Montserrat-Light;
- }
- .headerMainNav{
-  display: flex; 
- }
- .Navbar1{
-   display: flex;
- }
+  .contenedor01{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: space-around;
+    gap: 25px;
+    margin: 15px 0;
+    padding: 0 40px 40px 40px;
+}
+.presentacion{
+    display:flex;
+}
+
+.logo{
+    margin-left: 0;
+}
+.botones{
+    align-content: center;
+}
+.sub-boton{
+    position:relative;
+    padding:1em 1.5em;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    outline:0;
+    font-size:18px;
+    margin: .5em .8em;
+    font-weight: 600;
+}
+
+.sub-boton:after,
+.sub-boton:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color:#16a085;
+    transition:all .3s ease;
+    transform:scale(0.85)
+}
+.sub-boton:hover:before{
+    top:0;
+    transform:scale(1)
+}
+.sub-boton:hover:after{
+    transform:scale(1)
+}
+
+.telefono{
+   color: transparent;
+   align-self:center;
+}
+
 /* ----------------botones ---------------------- */
 .carrito-tu-pack{
   align-content: center;
@@ -49,19 +97,20 @@
 }
   /* ----------------------MAIN---------------------- */
   body {
-    font-family: "quicksand";
-      /* background-color: white; */
+    font-family: Montserrat-Light,quicksand, sans-serif;
     font-size: 16px;
     margin: 5px;
     padding: 1px;
     background-color: #D3D2BE;
-    background:linear-gradient(to top,rgba(13, 165, 165, 0.333),transparent,);
+    background: url(../img/imagen-home.jpeg);   
   }
   .container {
     width: 90%;
     margin: auto;
     justify-content: center; 
-    /* padding-top: 300px; */
+  box-shadow: 0 0 20px 0 rgb(255 255 255 / 30%);
+  background: rgba(0,0,0,.4);
+  padding: 1em;
   }
   /* Packs */
 .packs {
@@ -113,30 +162,69 @@
 .packUnitario {
       border-radius: 8px;
       padding: 1em;   
-      background-color:#29d1a7;
-      border: #21A6DE 1px solid;   
+      background-color:rgba(136, 151, 2, 0.9);
+      border: 2px solid #000;
       text-align: center;
       color: black;
       font-weight: bold;    
 }
 /* ----FOOTER ----*/
+.mainFooter{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 48% 30% 20%;
+    grid-template-rows: 15vh;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:seashell;
+}
+.mainFooter img{
+    width: 3vw;
+    height: 3vw;
+}
+.sectionOneFooter{
+    margin-left: -100px;
+}
+.sectionTwoFooter{
 
-.footer img{
-  width: 35px;
-  height: 30px;
+    display: flex;
 }
-.redesSocialesFooter{
-  display:flex;
-  justify-content: center;
+.sectionThreeFooter{
+    justify-self: center;
+    
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 0.8rem; 
 }
-.rrss{
-  display: flex;
-}
+/* termina new footer */
 
 /* media querys del main */
 
 @media (max-width: 389px) {
-    .packs {
+/* header     */
+.contenedor01{
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-content: center;
+  gap: 1.5em;
+  margin: 15px 0;
+  padding: 0.5em; 
+}
+.sub-boton{
+  color:#000000;
+  font-weight: 800;
+}
+.telefono{
+  font-size: 2em;
+}
+
+.presentacion{
+  flex-direction: column;
+}
+/* termina el header */
+
+.packs {
       grid-template-columns: 1fr;
     }
     .button {
@@ -144,9 +232,55 @@
     }
 } 
 
-@media (min-width: 390px) and (max-width: 799px){
+@media (min-width: 360px) and (max-width: 799px){
+  /* header */
+  .contenedor01{
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-content: center;
+    gap: 1.5em;
+    margin: 15px 0;
+    padding: 0.5em; 
+}
+.sub-boton{
+    color:#000000;
+    font-weight: 800;
+}
+.telefono{
+    font-size: 2em;
+}
+
+.presentacion{
+    flex-direction: column;
+}
+  /* terminal el header */
     .packs {
         grid-template-columns: repeat(2, 1fr);
+        
         }
         
-    }
+    
+ /* footer */
+ .mainFooter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} 
+.sectionThreeFooter{
+justify-self: center;
+
+margin-top: 0;
+margin-right: 0;
+font-size: 1rem; 
+}
+.sectionOneFooter{
+margin-left: 0px;
+}
+.mainFooter img {
+  width: 8vw;
+  height: 8vw;
+}
+/* termina el footer */
+}

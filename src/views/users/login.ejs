@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>teMudo.com</title>
-        <link rel="stylesheet" href="/css/loginStyles.css" /> <!--SIN SERVER DEBO SUMAR ../public -> href="../public/css/styles.css" -->
+         
         <meta name="viewport" content= "width= device-width , initial-scale=1">
+        <link rel="stylesheet" href="/css/indexNormalize.css">
+        <link rel="stylesheet" href="/css/loginStyles.css" />
     </head>
     <body class="background">
-        <a>
-            <a href="/home.html">
-                        <img src= "/img/your-logo.png" width="250" height="55" alt="Logo-Yo-Te-Mudo"> </img>
-        </a>
-            
+        <%- include('../partials/header') %> 
+            <main>
                 <form>
                     <div class="centrado">
                    
@@ -33,7 +32,7 @@
                         
                         <div>
                             <button class="carrito-volver">  
-                                <a href="#" class="boton_confirmar">
+                                <a href="profileAdmin" class="boton_confirmar">
                                     <img src="/img/send.svg" alt="Icono de Ingreso" width="20" height="20" style="vertical-align: middle"> 
                                 CONFIRMAR 
                                 </a>
@@ -41,23 +40,15 @@
                         </div>
                         <br>
                         <div class="otros-accesos">
-                            <a href="#">Olvide mi contraseña</a>  |  
+                            <a href="profileUser">Olvide mi contraseña</a>  |  
                             <a href="#">Crear cuenta</a>
                         </div>
                     </div>
                 </form>
-            
-        </header>
-        <main>
-
         </main>
-        <footer class="footer">
-            <div class="redesSocialesFooter">
-              
-              <div class ="rrss"><img src="/img/facebook.png" class="logoFacebook"/></div>
-              <div class="rrss"><img src="/img/twitter.png" class="logoTwitter"/></div>
-              <div class="rrss"><img src="/img/linkedin.png" class="logoFacebook"/></div>  
-            </div>  
-          </footer>
+        <br>
+        <br>
+        <br>
+        <%- include('../partials/footer') %> 
     </body>
 </html>

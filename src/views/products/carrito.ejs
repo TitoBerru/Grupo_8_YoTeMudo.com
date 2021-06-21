@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Carrito</title>
-    <!--esto es lo que se ve en la pestaña del navegador-->
     <link rel="stylesheet" href="/css/carritoNormalize.css">
     <link rel="stylesheet" href="/css/fuentes.css">
     <link rel="stylesheet" href="/css/carritoStyles.css">
 </head>
 
 <body>
-    <header>
-        <div class="carritoContenedor01">
-            <div class="logo">
-                <a href="/home.html">
-                <img id= "your" width="250" height="55" src= '/img/your-logo.png'alt= 'Imagen de logo'></img>
-            </a>
-            </div>
-        </div>
-        <div class="carritoContenedor02">
-            <h3>CONFIRMA TU PACK</h3>
-        </div>
-    </header>
-
+    <%- include('../partials/header') %> 
     <main>
         <div class="carritoContenedor03">
             <div class="carrito-tu-pack">
@@ -64,7 +50,7 @@
                 </button>
 
                 <button class="carrito-volver">
-                    <a href="/home.html">
+                    <a href="/">
                     VOLVER
                     <span class="icon"><img width="25" height="25" src='/img/arriba.png'
                             alt='Imagen de flecha hacia arriba'></img></span></a>
@@ -82,14 +68,16 @@
 
         </div>
     </main>
-    <footer class="footer">
+
+    <%- include('../partials/footer') %> 
+    <!-- <footer class="footer">
         <div class="redesSocialesFooter">
           
           <div class ="rrss"><img src="/img/facebook.png" class="logoFacebook"/></div>
           <div class="rrss"><img src="/img/twitter.png" class="logoTwitter"/></div>
           <div class="rrss"><img src="/img/linkedin.png" class="logoFacebook"/></div>  
         </div>  
-      </footer>
+      </footer> -->
 </body>
 
 </html>

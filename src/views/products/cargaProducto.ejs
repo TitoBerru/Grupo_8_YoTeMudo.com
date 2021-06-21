@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoTeMudo Carga de Producto</title>
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!--    Font awesome  -->
+    <script src="https://kit.fontawesome.com/29db22af69.js" crossorigin="anonymous"></script>
+
+    <!-- Enlace con CCS-->
+    <link rel="stylesheet" href="/css/indexNormalize.css">
+    <link rel="stylesheet" href="/css/carga-edicion.css">
+</head>
+
+    <body>
+
+        <%- include('../partials/header') %> 
+        <!-- <header>
+            <div class="logoyotemudo"><a href="/">
+                <img id= "your" width="250" height="55" src= '/img/your-logo.png'alt= 'Imagen de logo'></img>
+            </a>
+            </div>
+        </header> -->
+        <main>
+            <div class="content">
+                <h2 class="logo">Carga de <span class="logo2"> nuevo Pack </span></h2>
+            <div class="formulario_entero">
+                <div class="formulario_de_carga_edicion">
+                    <h1> Datos del Servicio </h1>
+                    <form name="cargaProducto" method="post" action="">
+                        <p>
+                            <label for="numeros">N° de Pack</label>
+                            <input type="text" name="numeros" required>
+                        </p>
+                        <p>
+                            <label for="texto">Radio en Km</label>
+                            <input type="text" name="texto">
+                        </p>
+                        <p>
+                            <label for="costo">Costo</label>
+                            <input type="text" name="costo" >
+                        </p>
+                        <p>
+                            <label for="medidas">Medidas</label>
+                            <input type="texto" name="medidas">
+                        </p>
+                            <button type="submit">VER PRELIMINAR</button>
+                            <button type="submit">ENVIAR</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="formulario_de_info">
+                    <div class="packUnitario">
+                        <img src="/img/camiones/flota-00_2.jpg" alt="Camion Mudanza 1" class="imagenCamion">
+                        <h3>PACK 1</h3>
+                        <span>Radio 30km </span> <br>
+                        <span>2,25 Mts2 </span> <br>
+                        <span>$10.500 </span> <br>
+                        <span>Medidas </span> <br>
+                        <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+                      </div>
+                </div>
+            </div>
+        </main>
+        
+    <%- include('../partials/footer') %> 
+
+</body>
+</html>

@@ -6,17 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/productoStyle.css">
+  <link rel="stylesheet" href="/css/indexNormalize.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header class="headerMain">
-    <div class="logo">
-      <a href="/home.html">
-      <img id= "your" width="250" height="55" src= '/img/your-logo.png'alt= 'Imagen de logo'></img>
-    </a>
-  </div>
-  </header>
+  <%- include('../partials/header') %> 
   <main>
     <div class="container">
    
@@ -45,7 +40,7 @@
           <span>2,25 Mts2 </span> <br>
           <span>$10.500 </span> <br>
           <span>Medidas </span> <br>
-          <span><a href="/carrito.html"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
         </div>
 
         <div class="packUnitario">
@@ -55,7 +50,7 @@
           <span>4 Mts2 </span> <br>
           <span>$15.000 </span> <br>
           <span>Medidas </span> <br>
-          <span><a href="/carrito.html"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
 
         </div>
         <div class="packUnitario">
@@ -65,7 +60,7 @@
           <span>8,8 Mts2 </span> <br>
           <span>$22.000 </span> <br>
           <span>Medidas </span> <br>
-          <span><a href="/carrito.html"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
 
         </div>
         <div class="packUnitario">
@@ -75,29 +70,13 @@
           <span>12,25 Mts2 </span> <br>
           <span>$25.000 </span> <br>
           <span>Medidas </span> <br>
-          <span><a href="/carrito.html"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
 
         </div>
-      </div>
-      <hr />
+      </div> 
     </div>
-    <div class="cont-button">
-      <div class="carrito-tu-pack">
-        <a href="/home.html" class="botonPack">
-          <button class="carrito-pack">Volver
-            <span class="icon"></span>
-          </button>
-        </a>
-      </div>
   </main>
-  <footer class="footer">
-    <div class="redesSocialesFooter">
-      
-      <div class ="rrss"><img src="/img/facebook.png" class="logoFacebook"/></div>
-      <div class="rrss"><img src="/img/twitter.png" class="logoTwitter"/></div>
-      <div class="rrss"><img src="/img/linkedin.png" class="logoFacebook"/></div>  
-    </div>  
-  </footer>
+  <%- include('../partials/footer') %> 
 </body>
 
 </html>
