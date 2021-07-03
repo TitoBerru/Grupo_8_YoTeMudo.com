@@ -5,7 +5,7 @@ const productController = {
     carrito: (req,res) => {
         res.render ('products/carrito');
     },
-    carga: (req,res) => {
+    carga: (req,res) => {     //create
         res.render ('products/cargaProducto');
     },
     edicion:  (req,res) => {

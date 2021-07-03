@@ -1,0 +1,41 @@
+[
+    {
+    "id": 1,
+    "nombre": "PACK 1",
+    "descripción": "paquete de ",
+    "imagen": "",
+    "radio": "",
+    "superficie": "",
+    "precio": 250
+    },
+
+    {
+    "id": 2,
+    "nombre": "PACK 2",
+    "descripción": "paquete de ",
+    "imagen": "",
+    "radio": "",
+    "superficie": "",
+    "precio": 250
+    },
+
+    {
+    "id": 3,
+    "nombre": "PACK 3",
+    "descripción": "paquete de ",
+    "imagen": "",
+    "radio": "",
+    "superficie": "",
+    "precio": 250
+    },
+
+    {
+    "id": 4,
+    "nombre": "PACK 4",
+    "descripción": "paquete de ",
+    "imagen": "",
+    "radio": "",
+    "superficie": "",
+    "precio": 250
+    }
+]
