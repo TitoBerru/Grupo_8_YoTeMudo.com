@@ -1,0 +1,54 @@
+[
+    {
+    "id": 1,
+    "nombre": "Hernan",
+    "apellido": "Miranda",
+    "contraseña": "Hola",
+    "email": "hernan.miranda@gmail.com",
+    "telefono": 55554444,
+    "imagen": "",
+    "profile": "user",
+    "domicilio": "Migueletes 2455", 
+    "localidad": "CABA"
+    },
+
+    {
+    "id": 2,
+   "nombre": "Hector",
+    "apellido": "Berrutti",
+    "contraseña": "ElTito01",
+    "email": "tito.berru@gmail.com",
+    "telefono": 55554434,
+    "imagen": "",
+    "profile": "user",
+    "domicilio": "Migueletes 4500", 
+    "localidad": "CABA"
+    },
+
+    {
+    "id": 3,
+    "nombre": "Gloria",
+    "apellido": "Zoldano",
+    "contraseña": "meEncantaEstudiar01",
+    "email": "gloria.zoldano@gmail.com",
+    "telefono": 55553333,
+   "imagen": "",
+    "profile": "user",
+    "domicilio": "Migueletes 2500", 
+    "localidad": "Cippoleti"
+    },
+
+    {
+    "id": 4,
+    "nombre": "Juan Carlos",
+    "apellido": "Mejias",
+    "contraseña": "vivaVenezuela",
+    "email": "juanMejias@gmail.com",
+    "telefono": 55554446,
+    "imagen": "",
+    "profile": "admin",
+    "domicilio": "Migueletes 5500", 
+    "localidad": "Caracas"
+    }
+
+]
