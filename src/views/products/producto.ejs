@@ -31,48 +31,63 @@
           </a>
         </div>
       </div>
-
+      
       <div class="packs">
-        <div class="packUnitario">
-          <img src="/img/camiones/flota-00_2.jpg" alt="Camion Mudanza 1" class="imagenCamion">
-          <h3>PACK 1</h3>
-          <span>Radio 30km </span> <br>
-          <span>2,25 Mts2 </span> <br>
-          <span>$10.500 </span> <br>
-          <span>Medidas </span> <br>
-          <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
-        </div>
+          <% for(let i = 0; i < products.length; i++) { %>
+            <div class="packUnitario">
+              <% if (users.profile == "admin") {%>
+                <a href="/products/edicionProducto/<%= products[i].id %>"></a>
+              <% } %>
+              <img src="/img/camiones/<%= products[i].imagen %>" alt="Camion Mudanza 1" class="imagenCamion">
+              <h3><%= products[i].name %></h3>
+              <span><%= products[i].radio %>km </span> <br>
+              <span><%= products[i].superficie %> Mts2 </span> <br>
+              <span>$<%= products[i].precio %> </span> <br>
+              <span>Medidas </span> <br>
+              <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+            </div>
+          <% } %>
 
-        <div class="packUnitario">
-          <img src="/img/camiones/flota-01.jpg" alt="Camion Mudanza 2" class="imagenCamion" />
-          <h3>PACK 2</h3>
-          <span>Radio 30km </span> <br>
-          <span>4 Mts2 </span> <br>
-          <span>$15.000 </span> <br>
-          <span>Medidas </span> <br>
-          <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+        <!-- <div class="packs">
+          <div class="packUnitario">
+            <img src="/img/camiones/flota-00_2.jpg" alt="Camion Mudanza 1" class="imagenCamion">
+            <h3>PACK 1</h3>
+            <span>Radio 30km </span> <br>
+            <span>2,25 Mts2 </span> <br>
+            <span>$10.500 </span> <br>
+            <span>Medidas </span> <br>
+            <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          </div>
 
-        </div>
-        <div class="packUnitario">
-          <img src="/img/camiones/flota-02.jpg" alt="Camion Mudanza 3" class="imagenCamion" />
-          <h3>PACK 3</h3>
-          <span>Radio 30km </span> <br>
-          <span>8,8 Mts2 </span> <br>
-          <span>$22.000 </span> <br>
-          <span>Medidas </span> <br>
-          <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          <div class="packUnitario">
+            <img src="/img/camiones/flota-01.jpg" alt="Camion Mudanza 2" class="imagenCamion" />
+            <h3>PACK 2</h3>
+            <span>Radio 30km </span> <br>
+            <span>4 Mts2 </span> <br>
+            <span>$15.000 </span> <br>
+            <span>Medidas </span> <br>
+            <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
 
-        </div>
-        <div class="packUnitario">
-          <img src="/img/camiones/flota-04.jpg" alt="Camion Mudanza 4" class="imagenCamion" />
-          <h3>PACK 4</h3>
-          <span>Radio 30km </span> <br>
-          <span>12,25 Mts2 </span> <br>
-          <span>$25.000 </span> <br>
-          <span>Medidas </span> <br>
-          <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          </div>
+          <div class="packUnitario">
+            <img src="/img/camiones/flota-02.jpg" alt="Camion Mudanza 3" class="imagenCamion" />
+            <h3>PACK 3</h3>
+            <span>Radio 30km </span> <br>
+            <span>8,8 Mts2 </span> <br>
+            <span>$22.000 </span> <br>
+            <span>Medidas </span> <br>
+            <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
 
-        </div>
+          </div>
+          <div class="packUnitario">
+            <img src="/img/camiones/flota-04.jpg" alt="Camion Mudanza 4" class="imagenCamion" />
+            <h3>PACK 4</h3>
+            <span>Radio 30km </span> <br>
+            <span>12,25 Mts2 </span> <br>
+            <span>$25.000 </span> <br>
+            <span>Medidas </span> <br>
+            <span><a href="/products/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+          </div> -->
       </div> 
     </div>
   </main>
