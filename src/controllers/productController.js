@@ -10,6 +10,7 @@ const users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
 const productController = {
     
     //Para mostrar todo el listado de productos
+
     listado: (req,res) => {
       res.render ('products/producto',{products:products,users:users});
     },
@@ -27,7 +28,16 @@ const productController = {
     },
     edicion:  (req,res) => {
         res.render ('products/edicionProducto');
-    }
+    },
+    store: (req, res) => {
+		// let nombreImagen=req.file.filename;
+		// let idNuevo = products[products.length-1].id + 1;
+		// let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{image:nombreImagen});
+		// productsDb.push(nuevoObjeto);
+   	    // fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+		// res.render('/index');
+        res.send(req.body.numeroDePack);
+	},
 };
 
 module.exports = productController; 

@@ -9,7 +9,8 @@
     "imagen": "",
     "profile": "user",
     "domicilio": "Migueletes 2455", 
-    "localidad": "CABA"
+    "localidad": "CABA",
+    "userAdmin": 1
     },
 
     {
@@ -22,7 +23,8 @@
     "imagen": "",
     "profile": "user",
     "domicilio": "Migueletes 4500", 
-    "localidad": "CABA"
+    "localidad": "CABA",
+    "userAdmin": 1
     },
 
     {
@@ -35,7 +37,8 @@
    "imagen": "",
     "profile": "user",
     "domicilio": "Migueletes 2500", 
-    "localidad": "Cippoleti"
+    "localidad": "Cippoleti",
+    "userAdmin": 1
     },
 
     {
@@ -48,7 +51,8 @@
     "imagen": "",
     "profile": "admin",
     "domicilio": "Migueletes 5500", 
-    "localidad": "Caracas"
+    "localidad": "Caracas",
+    "userAdmin": 1
     }
 
 ]

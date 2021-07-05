@@ -1,15 +1,27 @@
 const express = require('express');
+const path = require ('path');
+const methodOverride =  require('method-override');
 
 const app = express();
 
-const path = require ('path');
-
-const mainRoutes = require ('./routes/mainRoutes');
-const productRoutes = require ('./routes/productRoutes');
-
-app.set('view engine','ejs');
+// ****** Middlewares *******
 
 app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json()); // Necesario para trabajar archivos JSON
+app.use(methodOverride('_method')); // necesario para transformar los POST en PUT Y DELETE
+
+
+
+
+// *** Config de Vistas ***
+app.set('view engine','ejs');
+// app.set('views', path.join(__dirname, '/views'));  Creo que no era necesario si esta por fuera;
+
+
+// ** RUTAS ** 
+const mainRoutes = require ('./routes/mainRoutes');
+const productRoutes = require ('./routes/productRoutes');
 
 app.use('/',mainRoutes);
 app.use('/products',productRoutes);

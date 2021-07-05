@@ -32,14 +32,14 @@
             <div class="formulario_entero">
                 <div class="formulario_de_carga_edicion">
                     <h1> Datos del Servicio </h1>
-                    <form name="cargaProducto" method="post" action="">
+                    <form name="cargaProducto" method="POST" action="cargaProducto" enctype="multipart/form-data">
                         <p>
                             <label for="numeros">N° de Pack</label>
-                            <input type="text" name="numeros" required>
+                            <input type="text" name="numeroDePack" required>
                         </p>
                         <p>
                             <label for="texto">Radio en Km</label>
-                            <input type="text" name="texto">
+                            <input type="text" name="radio">
                         </p>
                         <p>
                             <label for="costo">Costo</label>
@@ -49,7 +49,8 @@
                             <label for="medidas">Medidas</label>
                             <input type="texto" name="medidas">
                         </p>
-                            <button type="submit">VER PRELIMINAR</button>
+                        <label for="imagenProducto" class="form-label">Imagen</label>
+						<input type="file" name="imagenProducto" />
                             <button type="submit">ENVIAR</button>
                         </p>
                     </form>
@@ -57,10 +58,10 @@
                 <div class="formulario_de_info">
                     <div class="packUnitario">
                         <img src="/img/camiones/flota-00_2.jpg" alt="Camion Mudanza 1" class="imagenCamion">
-                        <h3>PACK 1</h3>
-                        <span>Radio 30km </span> <br>
-                        <span>2,25 Mts2 </span> <br>
-                        <span>$10.500 </span> <br>
+                        <h3>PACK ?</h3>
+                        <span>Radio ?? km </span> <br>
+                        <span>?? Mts2 </span> <br>
+                        <span>Precio </span> <br>
                         <span>Medidas </span> <br>
                         <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
                       </div>
