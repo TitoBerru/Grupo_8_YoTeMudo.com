@@ -36,7 +36,7 @@ const productController = {
 		// productsDb.push(nuevoObjeto);
    	    // fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
 		// res.render('/index');
-        res.send(req.body.numeroDePack);
+        res.send(req.body);
 	},
 };
 

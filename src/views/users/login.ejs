@@ -11,7 +11,7 @@
     <body class="background">
         <%- include('../partials/header') %> 
             <main>
-                <form>
+                <form  name = 'login' Action='login' method='POST' >
                     <div class="centrado">
                    
                         <div class="icono_login"> 
@@ -19,28 +19,30 @@
                         </div>
                         <h2 class="titulo_Ingreso"> INICIAR SESION </h2>
                         <p> <label> 
-                            <input class= "formularios" type="text" name="nombreUsuario" placeholder="Usuario" size="35" maxlength="30" autofocus >
-                            </input> 
+                                <input class= "formularios" type="text" name="nombre" id="nombre" placeholder="Usuario" 
+                                    size="35" maxlength="30" autofocus >
+                                </input> 
                             </label> 
                         </p>
                         <p> <label> 
-                            <input class= "formularios"type="password" name="claveUsuario" placeholder="Contraseña" size="35" maxlength="30" > 
-                            </input>
+                                <input class= "formularios"type="password" name="claveUsuario" id="claveUsuario"
+                                    placeholder="Contraseña" size="35" maxlength="30" > 
+                                </input>
                             </label> 
                         </p>
                         <!--<input type="submit" value="Reestablecer contraseña / Registrarse" style="vertical-align: middle"> -->
                         
                         <div>
-                            <button class="carrito-volver">  
-                                <a href="profileAdmin" class="boton_confirmar">
+                            <button class="carrito-volver" type="submit">
+                                <!--<a href="/login" class="boton_confirmar"> -->
                                     <img src="/img/send.svg" alt="Icono de Ingreso" width="20" height="20" style="vertical-align: middle"> 
-                                CONFIRMAR 
+                                    CONFIRMAR 
                                 </a>
                             </button>
                         </div>
                         <br>
                         <div class="otros-accesos">
-                            <a href="profileUser">Olvide mi contraseña</a>  |  
+                            <a href="/profileAdmin">Olvide mi contraseña</a>  |  
                             <a href="#">Crear cuenta</a>
                         </div>
                     </div>
