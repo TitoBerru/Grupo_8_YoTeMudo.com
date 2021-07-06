@@ -21,7 +21,10 @@ const productController = {
     // },
 
     carrito: (req,res) => {
-        res.render ('products/carrito');
+        let idPack = req.params.id -1;
+        let packBuscado = products[idPack]
+       
+       res.render ('products/carrito', {packBuscado:packBuscado});
     },
     carga: (req,res) => {     //create
         res.render ('products/cargaProducto');
@@ -30,13 +33,12 @@ const productController = {
         res.render ('products/edicionProducto');
     },
     store: (req, res) => {
-		// let nombreImagen=req.file.filename;
-		// let idNuevo = products[products.length-1].id + 1;
-		// let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{image:nombreImagen});
-		// productsDb.push(nuevoObjeto);
-   	    // fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-		// res.render('/index');
-        res.send(req.body);
+        let nombreImagen=req.file.filename;
+		let idNuevo = products[products.length-1].id + 1;
+		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{image:nombreImagen});
+		products.push(nuevoObjeto);
+   	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+		res.render('index');
 	},
 };
 

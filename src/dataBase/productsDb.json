@@ -1,41 +1,54 @@
 [
-    {
-    "id": 1,
-    "nombre": "PACK 1",
-    "descripción": "paquete de ",
-    "imagen": "flota-00_2.jpg",
-    "radio": 30,
-    "superficie": 2.25,
-    "precio": 10500
-    },
-
-    {
-    "id": 2,
-    "nombre": "PACK 2",
-    "descripción": "paquete de ",
-    "imagen": "flota-01.jpg",
-    "radio": 30,
-    "superficie": 4,
-    "precio": 15000
-    },
-
-    {
-    "id": 3,
-    "nombre": "PACK 3",
-    "descripción": "paquete de ",
-    "imagen": "flota-02.jpg",
-    "radio": 30,
-    "superficie": 8.8,
-    "precio": 22000
-    },
-
-    {
-    "id": 4,
-    "nombre": "PACK 4",
-    "descripción": "paquete de ",
-    "imagen": "flota-04.jpg",
-    "radio": 30,
-    "superficie": 12.25,
-    "precio": 25000
-    }
+ {
+  "id": 1,
+  "nombre": "PACK 1",
+  "descripción": "paquete de ",
+  "imagen": "flota-00_2.jpg",
+  "radio": 10,
+  "superficie": 10.25,
+  "precio": 10
+ },
+ {
+  "id": 2,
+  "nombre": "PACK 2",
+  "descripción": "paquete de ",
+  "imagen": "flota-01.jpg",
+  "radio": 20,
+  "superficie": 20,
+  "precio": 20
+ },
+ {
+  "id": 3,
+  "nombre": "PACK 3",
+  "descripción": "paquete de ",
+  "imagen": "flota-02.jpg",
+  "radio": 30,
+  "superficie": 30,
+  "precio": 30
+ },
+ {
+  "id": 4,
+  "nombre": "PACK 4",
+  "descripción": "paquete de ",
+  "imagen": "flota-04.jpg",
+  "radio": 40,
+  "superficie": 40,
+  "precio": 40000
+ },
+ {
+  "id": 5,
+  "numeroDePack": "dsfa",
+  "radio": "sdf",
+  "costo": "s",
+  "medidas": "23",
+  "image": "img-_IGP1448.jpg"
+ },
+ {
+  "id": 6,
+  "numeroDePack": "sdf",
+  "radio": "dsf",
+  "costo": "sfs",
+  "medidas": "sdfsfds",
+  "image": "img-_IGP1448.jpg"
+ }
 ]

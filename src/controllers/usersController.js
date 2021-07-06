@@ -1,3 +1,8 @@
+const fs = require('fs');
+const path = require('path');
+const usersFilePath = path.join(__dirname, '../dataBase/usersDb.json');
+const totalUsers = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
 const usersController = {
     login: (req,res) => {
        res.render ('users/login');
@@ -7,24 +12,26 @@ const usersController = {
         res.render ('users/registro');
     },
     profileAdmin: (req,res) => {
-        res.render ('users/profileAdmin');
+        res.render ('/profileAdmin');
     },
     profileUser: (req,res) => {
         res.render ('users/profileUser');
     },
     accesoAdmin: (req,res)=>{
-        // res.render('users/profileAdmin')
-
-        // let profileUserIngresado = req.body.profile
-        // for (let i=0; i<users.length; i++){
-        // if(users[i].profile== profileUserIngresado && profileUserIngresado == "admin"){
-        //     res.render ('users/profileAdmin')
-        // }else{
-        //     res.render ('index');
-        //     }
-        // }
-        res.send(req.body)
-    },  
+        let userIngresado = req.body
+        for (let i=0; i<totalUsers.length; i++){
+            res.send(totalUsers[i].nombre)
+        //     if (users[i].nombre === userIngresado.nombre){
+        //     res.send ('logueo exitoso');
+        //     break
+        //     }   else{
+        //    res.send (users.length);
+        //    }
+        //    break
+        }   
+        // res.send(users[1].nombre)
+     
+}
 };
 
 module.exports = usersController; 

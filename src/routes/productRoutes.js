@@ -35,7 +35,7 @@ router.post('/cargaProducto', uploadFile.single('imagenProducto'), productContro
 
 // - /products/:id (GET)   —> Detalle de un producto particular
 // Se puede utilizar este, falta traer el ID
-router.get('/carrito', productController.carrito);
+router.get('/carrito/:id', productController.carrito);
 
 
 // - /products/:id/edit  (GET) —> Formulario de edición de productos
