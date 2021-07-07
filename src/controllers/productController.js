@@ -75,7 +75,7 @@ const productController = {
     store: (req, res) => {
         let nombreImagen=req.file.filename;
 		let idNuevo = products[products.length-1].id + 1;
-		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{image:nombreImagen});
+		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{imagen:nombreImagen});
 		products.push(nuevoObjeto);
    	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
 		res.render('index');

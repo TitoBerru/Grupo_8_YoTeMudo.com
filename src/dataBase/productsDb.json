@@ -34,21 +34,6 @@
   "radio": 40,
   "superficie": 40,
   "precio": 40000
- },
- {
-  "id": 5,
-  "numeroDePack": "dsfa",
-  "radio": "sdf",
-  "costo": "s",
-  "medidas": "23",
-  "image": "img-_IGP1448.jpg"
- },
- {
-  "id": 6,
-  "numeroDePack": "sdf",
-  "radio": "dsf",
-  "costo": "sfs",
-  "medidas": "sdfsfds",
-  "image": "img-_IGP1448.jpg"
  }
+ 
 ]
