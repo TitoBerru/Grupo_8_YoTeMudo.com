@@ -29,9 +29,49 @@ const productController = {
     carga: (req,res) => {     //create
         res.render ('products/cargaProducto');
     },
+
     edicion:  (req,res) => {
-        res.render ('products/edicionProducto');
+        // res.render ('products/edicionProducto', {products:products,users:users});
+    
+    let idProductoEditado = req.params.id;	
+
+    for(let i=0;i<products.length;i++){
+        if (products[i].id==idProductoEditado){
+            var productoEncontrado = products[i];
+        }
+        res.render('products/edicionProducto',{products: productoEncontrado});  // puedo llamar a products como productoPorModificar y cambiarlo en edicionProducto?
+        break
+    }
     },
+
+    actualizar:  (req,res) => {
+    
+        let valoresNuevos = req.body;
+		let idProductoEditado = req.params.id;	
+
+
+		for(let i=0;i<products.length;i++){
+			if (products[i].id==idProductoEditado){
+
+				products[i].nombre = valoresNuevos.nombre;
+				products[i].descripcion = valoresNuevos.descripcion;
+				//products[i].imagen = valoresNuevos.imagen;
+				products[i].radio = valoresNuevos.radio;
+                products[i].superficie = valoresNuevos.superficie;
+				products[i].precio = valoresNuevos.precio;
+
+				var productoActualizado = products[i];
+
+				break;
+			}
+		}
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+
+		res.render('products/edicionProducto',{products: productoActualizado})  //confirmar si renderizamos esta vista
+    
+    },
+
     store: (req, res) => {
         let nombreImagen=req.file.filename;
 		let idNuevo = products[products.length-1].id + 1;

@@ -38,12 +38,9 @@ router.post('/cargaProducto', uploadFile.single('imagenProducto'), productContro
 router.get('/carrito/:id', productController.carrito);
 
 
-// - /products/:id/edit  (GET) —> Formulario de edición de productos
-
-router.get('/edicionProducto',productController.edicion);
-
-// - /products/:id (PUT)         —> Acción de edición (almacenamiento de producto luego de creación)
-    // FALTA REALIZAR!!!!!!!!!!!!!!!!
+/*** EDITAR PRODUCTO ***/ 
+router.get('/edicionProducto/:id',productController.edicion);
+router.put('/edicionProducto/:id',productController.actualizar);
 
 // - /products/:id (DELETE)    —> Acción de eliminación de un producto
     // FALTA REALIZAR!!!!!!!!!!!!!!!!
