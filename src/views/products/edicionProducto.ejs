@@ -29,35 +29,39 @@
                 <div class="formulario_de_carga_edicion">
                     <h1> Datos del Servicio </h1>
                     
-                    <form name="cargaProducto" method="POST" action="/products/edicion/<%=productoAModificar.id%> ?_method=PUT">
+                    <form name="cargaProducto" method="POST" action="/products/edicionProducto/<%=productoAModificar.id%>?_method=PUT" method="POST">
                         <p>
-                            <label for="numeros">N° de Pack</label>
-                            <input type="text" name="numeros" required placeholder="<%=productoAModificar.nombre%>">
+                            <label for="nombre">N° de Pack</label>
+                            <input type="text" name="nombre" required placeholder="<%=productoAModificar.nombre%>">
                         </p>
                         <p>
-                            <label for="texto">Radio en Km</label>
-                            <input type="text" name="texto" placeholder="<%=productoAModificar.radio%>">
+                            <label for="radio">Radio en Km</label>
+                            <input type="text" name="radio" placeholder="<%=productoAModificar.radio%>">
                         </p>
                         <p>
-                            <label for="costo">Costo</label>
-                            <input type="text" name="costo" placeholder="<%=productoAModificar.precio%>" >
+                            <label for="precio">Costo</label>
+                            <input type="text" name="precio" placeholder="<%=productoAModificar.precio%>" >
                         </p>
                         <p>
-                            <label for="medidas">Medidas</label>
-                            <input type="texto" name="medidas" placeholder="<%=productoAModificar.superficie%>">
+                            <label for="superficie">Medidas</label>
+                            <input type="texto" name="superficie" placeholder="<%=productoAModificar.superficie%>">
                         </p>
-                            <button type="submit">VER PRELIMINAR</button>
+                        <!-- <p>
+                            <label for="imagenProducto" class="form-label">Imagen</label>
+						    <input type="file" name="imagenProducto" />
+                        </p> -->
+                           
                             <button type="submit">ENVIAR</button>
                         </p>
                     </form>
                 </div>
                 <div class="formulario_de_info">
                     <div class="packUnitario">
-                        <img src="/img/camiones/flota-00_2.jpg" alt="Camion Mudanza 1" class="imagenCamion">
-                        <h3>PACK 1</h3>
-                        <span>Radio 30km </span> <br>
-                        <span>2,25 Mts2 </span> <br>
-                        <span>$10.500 </span> <br>
+                        <img src="/img/camiones/<%=productoAModificar.imagen%>" alt="Camion Mudanza 1" class="imagenCamion">
+                        <h3>Pack Nro.<%=productoAModificar.id%></h3>
+                        <span>Radio <%=productoAModificar.radio%>km </span> <br>
+                        <span><%=productoAModificar.superficie%> Mts2 </span> <br>
+                        <span>$<%=productoAModificar.precio%></span> <br>
                         <span>Medidas </span> <br>
                         <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
                       </div>

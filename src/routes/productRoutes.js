@@ -27,7 +27,6 @@ router.get('/producto',productController.listado);
 
 // - /products (POST)            —> Acción de creación (almacenamiento de producto luego de creación)
 // - /products/create (GET)   —> Formulario de creación de productos
-// ESte sirve para enviar el formulario de creacion, falta el de envio de info
 router.get('/cargaProducto',productController.carga);
 router.post('/cargaProducto', uploadFile.single('imagenProducto'), productController.store);
 
@@ -39,8 +38,8 @@ router.get('/carrito/:id', productController.carrito);
 
 
 /*** EDITAR PRODUCTO ***/ 
-router.get('/edicionProducto/:id',productController.edicion);
-router.put('/edicionProducto/:id',productController.actualizar);
+router.get('/edicionProducto/:id?',productController.edicion);
+router.put('/edicionProducto/:id?',productController.actualizar);
 
 // - /products/:id (DELETE)    —> Acción de eliminación de un producto
     // FALTA REALIZAR!!!!!!!!!!!!!!!!

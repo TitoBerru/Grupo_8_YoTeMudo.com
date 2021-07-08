@@ -9,7 +9,8 @@ const usersController = {
     },
 
     accesoAdmin: (req,res)=>{
-        // res.render('users/profileAdmin')
+        res.render('users/profileAdmin')
+        // res.send(totalUsers[0].nombre);
         // logica: si el pass es correcto , 
         // validar si el usuario es admin
         // y ahi renderizas una pagina u otra y listo!
