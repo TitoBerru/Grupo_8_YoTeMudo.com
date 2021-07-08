@@ -24,26 +24,27 @@
         <%- include('../partials/header') %> 
         <main>
             <div class="content">
-                <h2 class="logo">Edición de <span class="logo2"> un Pack </span></h2>
+                <h2 class="logo">Edición de <span class="logo2"> <%=productoAModificar.nombre%> </span></h2>
             <div class="formulario_entero">
                 <div class="formulario_de_carga_edicion">
                     <h1> Datos del Servicio </h1>
-                    <form name="cargaProducto" method="post" action="">
+                    
+                    <form name="cargaProducto" method="POST" action="/products/edicion/<%=productoAModificar.id%> ?_method=PUT">
                         <p>
                             <label for="numeros">N° de Pack</label>
-                            <input type="text" name="numeros" required>
+                            <input type="text" name="numeros" required placeholder="<%=productoAModificar.nombre%>">
                         </p>
                         <p>
                             <label for="texto">Radio en Km</label>
-                            <input type="text" name="texto">
+                            <input type="text" name="texto" placeholder="<%=productoAModificar.radio%>">
                         </p>
                         <p>
                             <label for="costo">Costo</label>
-                            <input type="text" name="costo" >
+                            <input type="text" name="costo" placeholder="<%=productoAModificar.precio%>" >
                         </p>
                         <p>
                             <label for="medidas">Medidas</label>
-                            <input type="texto" name="medidas">
+                            <input type="texto" name="medidas" placeholder="<%=productoAModificar.superficie%>">
                         </p>
                             <button type="submit">VER PRELIMINAR</button>
                             <button type="submit">ENVIAR</button>

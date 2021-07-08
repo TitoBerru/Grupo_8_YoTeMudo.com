@@ -14,17 +14,19 @@ const usersController = {
         // validar si el usuario es admin
         // y ahi renderizas una pagina u otra y listo!
 
+        // for (let i=0; i<totalUsers.length; i++){
+        //     if(totalUsers[i].usuario== req.body.usuario){     //el mail coincide con lo que trae del formulario?
+        //         if(bcrypt.compareSync(req.body.contraseña, totalUsers[i].contraseña)){   // la contraseña traida del formulario, es igual a la almacenada en el Json?
+        //             let usuarioidentificado = totalUsers[i];    // si se dan estas condic., guardame el usuario a logearse.
 
-        let profileUserIngresado = req.body.usuario
-        
-        for (let i=0; i<totalUsers.length; i++){
-        if(totalUsers[i].usuario== profileUserIngresado && profileUserIngresado == "admin"){
-        //     res.render ('users/profileAdmin')
-
-
-        
-        // }else{
-            res.send (req.body);
+        //             if (usuarioidentificado[i].profile == 'admin'){
+        //                 res.render ('users/profileAdmin');
+        //             }else if(usuarioidentificado[i].profile == 'user'){
+        //                 res.render ('users/profileUser');
+        //             }else {
+        //                 res.render ('/login');
+        //                 }
+        //         } 
         //     }
         // }
     },
@@ -37,22 +39,7 @@ const usersController = {
     },
     profileUser: (req,res) => {
         res.render ('users/profileUser');
-    },
-    // accesoAdmin: (req,res)=>{
-    //     let userIngresado = req.body
-    //     for (let i=0; i<totalUsers.length; i++){
-    //         res.send(totalUsers[i].nombre)
-    //     //     if (users[i].nombre === userIngresado.nombre){
-    //     //     res.send ('logueo exitoso');
-    //     //     break
-    //     //     }   else{
-    //     //    res.send (users.length);
-    //     //    }
-    //     //    break
-    //     }   
-        // res.send(users[1].nombre)
-     
-// }
+    }
 };
 
 module.exports = usersController; 

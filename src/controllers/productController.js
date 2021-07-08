@@ -33,43 +33,42 @@ const productController = {
     edicion:  (req,res) => {
         // res.render ('products/edicionProducto', {products:products,users:users});
     
-    let idProductoEditado = req.params.id;	
+        let idProductoEditado = req.params;	
 
-    for(let i=0;i<products.length;i++){
-        if (products[i].id==idProductoEditado){
-            var productoEncontrado = products[i];
-        }
-        res.render('products/edicionProducto',{products: productoEncontrado});  // puedo llamar a products como productoPorModificar y cambiarlo en edicionProducto?
-        break
-    }
+        for(let i=0;i<products.length;i++){
+            if (products[i].id==idProductoEditado.id){
+                var productoEncontrado = products[i];
+            break
+            }
+        }    
+        res.render('products/edicionProducto',{productoAModificar: productoEncontrado});  // puedo llamar a products como productoPorModificar y cambiarlo en edicionProducto?
     },
 
-    actualizar:  (req,res) => {
+    actualizar: (req,res) => {
     
         let valoresNuevos = req.body;
-		let idProductoEditado = req.params.id;	
+		let idProductoEditado = req.params;	
 
+		// for(let i=0;i<products.length;i++){
+		// 	if (products[i].id==idProductoEditado.id){
 
-		for(let i=0;i<products.length;i++){
-			if (products[i].id==idProductoEditado){
+		// 		products[i].nombre = valoresNuevos.nombre;
+		// 		products[i].descripcion = valoresNuevos.descripcion;
+		// 		//products[i].imagen = valoresNuevos.imagen;
+		// 		products[i].radio = valoresNuevos.radio;
+        //         products[i].superficie = valoresNuevos.superficie;
+		// 		products[i].precio = valoresNuevos.precio;
 
-				products[i].nombre = valoresNuevos.nombre;
-				products[i].descripcion = valoresNuevos.descripcion;
-				//products[i].imagen = valoresNuevos.imagen;
-				products[i].radio = valoresNuevos.radio;
-                products[i].superficie = valoresNuevos.superficie;
-				products[i].precio = valoresNuevos.precio;
+		// 		var productoActualizado = products[i];
 
-				var productoActualizado = products[i];
+		// 		break;
+		// 	}
+		// }
 
-				break;
-			}
-		}
+		// fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-
-		res.render('products/edicionProducto',{products: productoActualizado})  //confirmar si renderizamos esta vista
-    
+		// res.render('products/edicionProducto',{products: productoActualizado})  //confirmar si renderizamos esta vista
+    res.send(req.body)
     },
 
     store: (req, res) => {

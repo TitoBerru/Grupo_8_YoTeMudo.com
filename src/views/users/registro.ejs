@@ -33,22 +33,38 @@
         <div class="formulario_entero">
             <div class="formulario_de_contacto">
                 <h1> Datos de usuario </h1>
-                <form action="">
+                <form action="/registro" method='POST' enctype="multipart/form-data">
                     <p>
-                        <label for="NombreCompleto">Nombre Completo</label>
-                        <input type="text" name="NombreCompleto">
+                        <label for="nombre">NOMBRE </label>
+                        <input type="text" name="nombre" id="nombre">
                     </p>
                     <p>
-                        <label for="EMAIL">EMAIL</label>
-                        <input type="text" name="email">
+                        <label for="apellido">APELLIDO</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </p>
+                    <p>
+                        <label for="usuario">USUARIO</label>
+                        <input type="text" name="usuario" id="usuario" required>
+                    </p>
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="text" name="email" id="email">
                     </p>
                     <p>
                         <label for="telefono">TELEFONO</label>
-                        <input type="tel" name"telefono">
+                        <input type="tel" name="telefono" id="telefono" >
                     </p>
                     <p>
-                        <label for="password">Contraseña</label>
-                        <input type="password" "password">
+                        <label for="domicilio">DOMICILIO</label>
+                        <input type="text" name="domicilio" id="domicilio" >
+                    </p>
+                    <p>
+                        <label for="localidad">LOCALIDAD</label>
+                        <input type="text" name="localidad" id="localidad" >
+                    </p>
+                    <p>
+                        <label for="claveUsuario">CONTRASEÑA</label>
+                        <input type="password" "password" name="claveUsuario" id="claveUsuario">
                     </p>
                     
                        <button type="submit">ENVIAR</button>
