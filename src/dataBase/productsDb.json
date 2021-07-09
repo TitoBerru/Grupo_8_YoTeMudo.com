@@ -1,40 +1,58 @@
 [
  {
-  "id": 8,
+  "id": 1,
   "numeroDePack": "1",
   "radio": "",
-  "costo": "20000",
+  "costo": "7500",
   "medidas": "10",
   "imagen": "flota-00_1.jpg",
   "superficie": "",
-  "precio": ""
+  "precio": "7500"
  },
  {
-  "id": 9,
+  "id": 2,
   "numeroDePack": "2",
   "radio": "20",
-  "costo": "20000",
+  "costo": "15000",
   "medidas": "10",
-  "imagen": "flota-00_1.jpg"
+  "imagen": "flota-01.jpg",
+  "superficie": "",
+  "precio": "15000"
  },
  {
-  "id": 10,
+  "id": 3,
   "numeroDePack": "3",
   "radio": "30",
-  "costo": "10000",
+  "costo": "25000",
   "medidas": "5",
-  "imagen": "flota-00.jpg",
+  "imagen": "flota-02.jpg",
   "superficie": "5",
-  "precio": "3000"
+  "precio": "25000"
  },
  {
-  "id": 11,
+  "id": 4,
   "numeroDePack": "4",
   "radio": "",
   "costo": "40000",
   "medidas": "15",
-  "imagen": "flota-01.jpg",
-  "superficie": "",
-  "precio": ""
+  "imagen": "flota-04.jpg",
+  "superficie": "4",
+  "precio": "40000"
+ },
+ {
+  "id": 5,
+  "numeroDePack": "5",
+  "radio": "28",
+  "costo": "40000",
+  "medidas": "4",
+  "imagen": "img-flota-04.jpg"
+ },
+ {
+  "id": 6,
+  "numeroDePack": "5",
+  "radio": "28",
+  "costo": "40000",
+  "medidas": "4",
+  "imagen": "img-flota-04.jpg"
  }
 ]
