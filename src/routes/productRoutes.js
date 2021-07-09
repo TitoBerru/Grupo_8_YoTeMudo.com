@@ -38,8 +38,8 @@ router.get('/carrito/:id', productController.carrito);
 
 
 /*** EDITAR PRODUCTO ***/ 
-router.get('/edicionProducto/:id',productController.edicion);
-router.put('/edicionProducto/:id',productController.actualizar);
+router.get('/edicionProducto/:id?',productController.edicion);
+router.put('/edicionProducto/:id',uploadFile.single('imagenProducto'),productController.actualizar);
 
 // - /products/:id (DELETE)    —> Acción de eliminación de un producto
     // FALTA REALIZAR!!!!!!!!!!!!!!!!

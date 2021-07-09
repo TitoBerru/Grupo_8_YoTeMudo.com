@@ -52,6 +52,7 @@ const productController = {
     actualizar: (req,res) => {
         let idParaCambiar = req.params.id;
         let ProductoAModificar = req.body;
+        let nombreImagen=req.file.filename;
 
 		for(let i=0;i<products.length;i++){
 	        if (products[i].id == idParaCambiar){
@@ -62,17 +63,14 @@ const productController = {
             products[i].superficie = ProductoAModificar.superficie;
 	        products[i].precio = ProductoAModificar.precio;
             products[i].superficie = ProductoAModificar.superficie;
+            products[i].imagen = nombreImagen;
 
-		var productoActualizado = products[i];
-        
-
+		//var productoActualizado = products[i];
 		break;
 	 	    }
 	    }
-        
 		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-     
-		res.render('products/producto', {products:products,users:users})
+		res.render('products/carrito/'+req.params.id, {products:products,users:users})
     //  res.send(req.body)
     },
 

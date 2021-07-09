@@ -24,12 +24,12 @@
         <%- include('../partials/header') %> 
         <main>
             <div class="content">
-                <h2 class="logo">Edición de <span class="logo2"> <%=productoEncontrado.numeroDePack%> </span></h2>
+                <h2 class="logo">Edición de Pack<span class="logo2"> <%=productoEncontrado.numeroDePack%> </span></h2>
             <div class="formulario_entero">
                 <div class="formulario_de_carga_edicion">
                     <h1> Datos del Servicio </h1>
                     
-                    <form name="editarProducto" method="POST" action="/products/edicionProducto/<%=productoEncontrado.id%>?_method=PUT" method="POST">
+                    <form name="edicionProducto" method="POST" action="/products/edicionProducto/<%=productoEncontrado.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                         <p>
                             <label for="numeroDePack">N° de Pack</label>
                             <input type="text" name="numeroDePack" required placeholder="<%=productoEncontrado.numeroDePack%>">
@@ -46,10 +46,10 @@
                             <label for="superficie">Medidas</label>
                             <input type="texto" name="superficie" placeholder="<%=productoEncontrado.superficie%>">
                         </p>
-                        <!-- <p>
+                        <p>
                             <label for="imagenProducto" class="form-label">Imagen</label>
 						    <input type="file" name="imagenProducto" />
-                        </p> -->
+                        </p>
                         
                             <button type="submit">ENVIAR</button>
                         </p>
@@ -59,7 +59,7 @@
                 <div class="formulario_de_info">
                     <div class="packUnitario">
                         <img src="/img/camiones/<%=productoEncontrado.imagen%>" alt="Camion Mudanza 1" class="imagenCamion">
-                        <h3>Pack Nro.<%=productoEncontrado.id%></h3>
+                        <h3>Pack N°<%=productoEncontrado.id%></h3>
                         <span>Radio <%=productoEncontrado.radio%>km </span> <br>
                         <span><%=productoEncontrado.superficie%> Mts2 </span> <br>
                         <span>$<%=productoEncontrado.precio%></span> <br>
