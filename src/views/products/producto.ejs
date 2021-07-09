@@ -35,20 +35,30 @@
       <div class="packs">
           <% for(let i = 0; i < products.length; i++) { %>
             <div class="packUnitario">
-              <% if (users.profile == "admin") {%>
-              
-              <% } %>
-              
+           
               <img src="/img/camiones/<%= products[i].imagen %>" alt="Camion Mudanza 1" class="imagenCamion">
-              <h3><%= products[i].name %></h3>
+
+              <h3><%= products[i].numeroDePack %></h3>
+              <span>hola</span>
               <span><%= products[i].radio %>km </span> <br>
               <span><%= products[i].superficie %> Mts2 </span> <br>
               <span>$<%= products[i].precio %> </span> <br>
               <span>Medidas </span> <br>
-              <a href="/products/edicionProducto/<%= products[i].id %>">EDITAR</a>
+              <div class="carrito-tu-pack"> 
+                  <button class="carrito-pack">
+                    <a href="/products/edicionProducto/<%= products[i].id %>">EDITAR</a>
+                  </button>
+                </a>
+              </div>
+              <div class="carrito-tu-pack">
+                <button class="carrito-pack"  type="submit" class="action-button delete">
+                  <form action="/products/<%=products[i].id %>?_method=DELETE" method="POST" onsubmit="return confirm('Esta seguro que desea eliminarlo?');">
+                    ELIMINAR
+                  
+                </button>
+              </a>
+            </div>
               <span><a href="/products/carrito/<%=products[i].id%>"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
-              
-              <a href="/products/edicionProducto/<%= products[i].id %>">ELIMINAR</a>
             </div>
           <% } %>
 

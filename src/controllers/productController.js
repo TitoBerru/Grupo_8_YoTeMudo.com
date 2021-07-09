@@ -32,46 +32,40 @@ const productController = {
     },
 
     edicion:  (req,res) => {
-        // Configuro por ahora al pack fijo 1, para que tome los valores al venir del admin
-        // si bien seria suficiente con dejar el valor fijo, corro el if para mas adelante...
+       
         let idProductoEditado = req.params;	
-        if (idProductoEditado != undefined){
-            idProductoEditado.id = 1;
         for(let i=0;i<products.length;i++){
             if (products[i].id==idProductoEditado.id){
                 var productoEncontrado = products[i];
-            break
-            }
-        }  }  
-        res.render('products/edicionProducto',{productoAModificar: productoEncontrado});  // puedo llamar a products como productoPorModificar y cambiarlo en edicionProducto?
+            break  
+            }  
+        }  
+        res.render('products/edicionProducto',{productoEncontrado: productoEncontrado});
     },
 
     actualizar: (req,res) => {
-        let packACambiar = req.body;
-
+        let idParaCambiar = req.params.id;
+        let ProductoAModificar = req.body;
 
 		for(let i=0;i<products.length;i++){
-	        if (products[i].id == packACambiar.nombre){
-                // res.send('llego')
+	        if (products[i].id == idParaCambiar){
+            
                      
-				 products[i].nombre = packACambiar.nombre;
-				 products[i].radio = packACambiar.radio;
-                 products[i].superficie = packACambiar.superficie;
-			     products[i].precio = packACambiar.precio;
-                 products[i].descripcion = packACambiar.descripcion;
-			    //  products[i].imagen = packACambiar.imagen;
+		 	products[i].numeroDePack = ProductoAModificar.numeroDePack;
+		 	products[i].radio = ProductoAModificar.radio;
+            products[i].superficie = ProductoAModificar.superficie;
+	        products[i].precio = ProductoAModificar.precio;
+            products[i].superficie = ProductoAModificar.superficie;
 
-			  var productoActualizado = products[i];
+		var productoActualizado = products[i];
+        
 
-				break;
-	 	    } else {
-                //  let mensajeDeError = "ese ID no existe, por favor ingresar otro"
-                //  res.render('products/edicionProducto',{mensajeDeError});
-             }
+		break;
+	 	    }
 	    }
-
-		 fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-        // res.send(valoresNuevos)
+        
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+     
 		res.render('products/producto', {products:products,users:users})
     //  res.send(req.body)
     },

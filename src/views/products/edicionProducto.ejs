@@ -24,27 +24,27 @@
         <%- include('../partials/header') %> 
         <main>
             <div class="content">
-                <h2 class="logo">Edición de <span class="logo2"> <%=productoAModificar.nombre%> </span></h2>
+                <h2 class="logo">Edición de <span class="logo2"> <%=productoEncontrado.numeroDePack%> </span></h2>
             <div class="formulario_entero">
                 <div class="formulario_de_carga_edicion">
                     <h1> Datos del Servicio </h1>
                     
-                    <form name="cargaProducto" method="POST" action="/products/edicionProducto/<%=productoAModificar.id%>?_method=PUT" method="POST">
+                    <form name="editarProducto" method="POST" action="/products/edicionProducto/<%=productoEncontrado.id%>?_method=PUT" method="POST">
                         <p>
-                            <label for="nombre">N° de Pack</label>
-                            <input type="text" name="nombre" required placeholder="<%=productoAModificar.nombre%>">
+                            <label for="numeroDePack">N° de Pack</label>
+                            <input type="text" name="numeroDePack" required placeholder="<%=productoEncontrado.numeroDePack%>">
                         </p>
                         <p>
                             <label for="radio">Radio en Km</label>
-                            <input type="text" name="radio" placeholder="<%=productoAModificar.radio%>">
+                            <input type="text" name="radio" placeholder="<%=productoEncontrado.radio%>">
                         </p>
                         <p>
                             <label for="precio">Costo</label>
-                            <input type="text" name="precio" placeholder="<%=productoAModificar.precio%>" >
+                            <input type="text" name="precio" placeholder="<%=productoEncontrado.precio%>" >
                         </p>
                         <p>
                             <label for="superficie">Medidas</label>
-                            <input type="texto" name="superficie" placeholder="<%=productoAModificar.superficie%>">
+                            <input type="texto" name="superficie" placeholder="<%=productoEncontrado.superficie%>">
                         </p>
                         <!-- <p>
                             <label for="imagenProducto" class="form-label">Imagen</label>
@@ -58,11 +58,11 @@
                 </div>
                 <div class="formulario_de_info">
                     <div class="packUnitario">
-                        <img src="/img/camiones/<%=productoAModificar.imagen%>" alt="Camion Mudanza 1" class="imagenCamion">
-                        <h3>Pack Nro.<%=productoAModificar.id%></h3>
-                        <span>Radio <%=productoAModificar.radio%>km </span> <br>
-                        <span><%=productoAModificar.superficie%> Mts2 </span> <br>
-                        <span>$<%=productoAModificar.precio%></span> <br>
+                        <img src="/img/camiones/<%=productoEncontrado.imagen%>" alt="Camion Mudanza 1" class="imagenCamion">
+                        <h3>Pack Nro.<%=productoEncontrado.id%></h3>
+                        <span>Radio <%=productoEncontrado.radio%>km </span> <br>
+                        <span><%=productoEncontrado.superficie%> Mts2 </span> <br>
+                        <span>$<%=productoEncontrado.precio%></span> <br>
                         <span>Medidas </span> <br>
                         <span><a href="/carrito"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
                       </div>

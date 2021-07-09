@@ -1,62 +1,20 @@
 [
  {
-  "id": 1,
-  "nombre": "1",
-  "descripción": "paquete de ",
-  "imagen": "flota-00_2.jpg",
-  "radio": "34234242",
-  "superficie": "423423423423424234",
-  "precio": "234242423423"
- },
- {
-  "id": 2,
-  "nombre": "2",
-  "descripción": "paquete de ",
-  "imagen": "flota-01.jpg",
-  "radio": "9999999999999999",
-  "superficie": "999999999999999999",
-  "precio": "99999999999999"
- },
- {
-  "id": 3,
-  "nombre": "PACK 3",
-  "descripción": "paquete de ",
-  "imagen": "flota-02.jpg",
-  "radio": 30,
-  "superficie": 30,
-  "precio": 30
- },
- {
-  "id": 4,
-  "nombre": "PACK 4",
-  "descripción": "paquete de ",
-  "imagen": "flota-04.jpg",
-  "radio": 40,
-  "superficie": 40,
-  "precio": 40000
- },
- {
   "id": 5,
   "numeroDePack": "8",
-  "radio": "88",
-  "costo": "8888",
-  "medidas": "8888",
-  "imagen": "img-_IGP1448.jpg"
+  "radio": "",
+  "costo": "2",
+  "medidas": "2",
+  "imagen": "img-just.jpg",
+  "superficie": "",
+  "precio": ""
  },
  {
   "id": 6,
-  "numeroDePack": "88",
-  "radio": "8888888",
-  "costo": "8888888",
-  "medidas": "8888888888",
-  "imagen": "img-97143333_10222525313138852_3919015970923872256_n (2).jpg"
- },
- {
-  "id": 7,
-  "numeroDePack": "888",
-  "radio": "8888",
-  "costo": "88888",
-  "medidas": "88888",
-  "imagen": "img-avatar.jpg"
+  "numeroDePack": "2",
+  "radio": "222",
+  "costo": "22",
+  "medidas": "222",
+  "imagen": "img-flota-00.jpg"
  }
 ]
