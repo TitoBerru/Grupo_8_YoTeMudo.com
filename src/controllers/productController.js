@@ -84,6 +84,23 @@ const productController = {
    	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
            res.render('products/producto', {products:products,users:users})
 	},
+
+    destroy : (req, res) => {
+
+		let idProducto = req.params.id;	
+		for(let i=0;i<products.length;i++){
+			if (products[i].id==idProducto){
+				var nombreImagen=products[i].imagen;
+				products.splice(i,1);
+				break;
+			}
+		}
+		
+	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+		fs.unlinkSync(path.join(__dirname,'../../public/img/camiones/'+nombreImagen));
+		res.render('index');
+		}
+
 };
 
 module.exports = productController; 

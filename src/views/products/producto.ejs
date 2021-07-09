@@ -36,15 +36,19 @@
           <% for(let i = 0; i < products.length; i++) { %>
             <div class="packUnitario">
               <% if (users.profile == "admin") {%>
-                <a href="/products/edicionProducto/<%= products[i].id %>"></a>
+              
               <% } %>
+              
               <img src="/img/camiones/<%= products[i].imagen %>" alt="Camion Mudanza 1" class="imagenCamion">
               <h3><%= products[i].name %></h3>
               <span><%= products[i].radio %>km </span> <br>
               <span><%= products[i].superficie %> Mts2 </span> <br>
               <span>$<%= products[i].precio %> </span> <br>
               <span>Medidas </span> <br>
+              <a href="/products/edicionProducto/<%= products[i].id %>">EDITAR</a>
               <span><a href="/products/carrito/<%=products[i].id%>"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
+              
+              <a href="/products/edicionProducto/<%= products[i].id %>">ELIMINAR</a>
             </div>
           <% } %>
 

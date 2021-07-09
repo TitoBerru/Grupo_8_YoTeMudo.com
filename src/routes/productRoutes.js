@@ -43,7 +43,7 @@ router.put('/edicionProducto/:id?',productController.actualizar);
 
 // - /products/:id (DELETE)    —> Acción de eliminación de un producto
     // FALTA REALIZAR!!!!!!!!!!!!!!!!
-
+router.delete('/:id',productController.destroy);
 
 module.exports = router;
 
