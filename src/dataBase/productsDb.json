@@ -1,20 +1,40 @@
 [
  {
-  "id": 5,
-  "numeroDePack": "8",
+  "id": 8,
+  "numeroDePack": "1",
   "radio": "",
-  "costo": "2",
-  "medidas": "2",
-  "imagen": "img-just.jpg",
+  "costo": "20000",
+  "medidas": "10",
+  "imagen": "img-flota-00_1.jpg",
   "superficie": "",
   "precio": ""
  },
  {
-  "id": 6,
+  "id": 9,
   "numeroDePack": "2",
-  "radio": "222",
-  "costo": "22",
-  "medidas": "222",
-  "imagen": "img-flota-00.jpg"
+  "radio": "20",
+  "costo": "20000",
+  "medidas": "10",
+  "imagen": "img-flota-00_1.jpg"
+ },
+ {
+  "id": 10,
+  "numeroDePack": "3",
+  "radio": "30",
+  "costo": "10000",
+  "medidas": "5",
+  "imagen": "img-flota-00.jpg",
+  "superficie": "5",
+  "precio": "3000"
+ },
+ {
+  "id": 11,
+  "numeroDePack": "4",
+  "radio": "",
+  "costo": "40000",
+  "medidas": "15",
+  "imagen": "img-flota-01.jpg",
+  "superficie": "",
+  "precio": ""
  }
 ]

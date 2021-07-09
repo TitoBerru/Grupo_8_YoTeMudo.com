@@ -22,10 +22,15 @@ const productController = {
     // },
 
     carrito: (req,res) => {
-        let idPack = req.params.id -1;
-        let packBuscado = products[idPack]
-       
-       res.render ('products/carrito', {packBuscado:packBuscado});
+
+        let idProducto = req.params.id;
+        for(let i=0;i<products.length;i++){
+			if (products[i].id==idProducto){
+				var packB = products[i];
+			}
+            
+		}
+      res.render ('products/carrito', {packBuscado:packB});
     },
     carga: (req,res) => {     //create
         res.render ('products/cargaProducto');
