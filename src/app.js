@@ -25,8 +25,8 @@ const productRoutes = require ('./routes/productRoutes');
 app.use('/',mainRoutes);
 app.use('/products',productRoutes);
 
-app.listen((3500), () => {
-    console.log('Servidor corriendo en el puerto 3500');
+app.listen((3000), () => {
+    console.log('Servidor corriendo en el puerto 3000');
 });
 
 

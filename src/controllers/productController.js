@@ -47,28 +47,32 @@ const productController = {
     },
 
     actualizar: (req,res) => {
-        let packACambiar = req.body.nombre;
-        let valoresNuevos = req.body;
+        let packACambiar = req.body;
+
 
 		for(let i=0;i<products.length;i++){
-	        if (products[i].nombre==packACambiar.nombre){
+	        if (products[i].id == packACambiar.nombre){
+                // res.send('llego')
+                     
+				 products[i].nombre = packACambiar.nombre;
+				 products[i].radio = packACambiar.radio;
+                 products[i].superficie = packACambiar.superficie;
+			     products[i].precio = packACambiar.precio;
+                 products[i].descripcion = packACambiar.descripcion;
+			    //  products[i].imagen = packACambiar.imagen;
 
-				products[i].nombre = valoresNuevos.nombre;
-				products[i].radio = valoresNuevos.radio;
-                products[i].superficie = valoresNuevos.superficie;
-			    products[i].precio = valoresNuevos.precio;
-                // products[i].descripcion = valoresNuevos.descripcion;
-			    //products[i].imagen = valoresNuevos.imagen;
-
-			// var productoActualizado = products[i];
+			  var productoActualizado = products[i];
 
 				break;
-	 	    }
+	 	    } else {
+                //  let mensajeDeError = "ese ID no existe, por favor ingresar otro"
+                //  res.render('products/edicionProducto',{mensajeDeError});
+             }
 	    }
 
 		 fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-        res.render('index')
-	// 	res.render('index',{products: productoActualizado})  confirmar si renderizamos esta vista
+        // res.send(valoresNuevos)
+		res.render('products/producto', {products:products,users:users})
     //  res.send(req.body)
     },
 
@@ -78,7 +82,7 @@ const productController = {
 		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{imagen:nombreImagen});
 		products.push(nuevoObjeto);
    	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-		res.render('index');
+           res.render('products/producto', {products:products,users:users})
 	},
 };
 
