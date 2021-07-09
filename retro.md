@@ -1,30 +1,41 @@
 RETROSPECTIVA YoTeMudo.com:
 
-Realizamos un análisis de los resultados del Sprint 2 y se programó tareas para el sprint 3:
+Realizamos un análisis de los resultados del Sprint 3 y se programó tareas para el sprint 4:
 
-1) Comenzaremos a hacer todos el paso a patrones de diseño MVC.
-2) Haremos más revisión del css: 
-- Ajustaremos el css y utilizaremos sólo una imagen de fondo para la visualización en media de desktop. En mobile quedará sin foto de fondo. 
-- Revisaremos el font - family para que todos los html tengan el mismo. 
-3) Continuaremos realizando un daily.md utilizando audios de Whatsapp y de dar con el tiempo se subirá al Trello. 
-
-Divisiones de trabajos: 
-- Hector y JuanCa: Footer / Header / Head separados en html (luego ejs) y revisión del CSS general del proyecto.
-- Hernan: Perfiles Administrador y Usuario.
-- Glo: Formularios de Carga y Edición de Productos. 
+1) Proximos pasos: agregar accesos a vista de perfil usuario y vista de Edicion de usuario.
+2) Falta linkear Index, Formularios, y controladores con su lógica.
+3) Las vistas, rutas y controladores los tenemos.
 
 
 NOTA: 
-- Se realizó un GitHub específico para el proyecto, un correo electrónico y se subió a Heroku. 
+- Campos a presentar en el JSON de usuarios:
 
-tareas:
+id
+nombre
+apellido
+contraseña
+e-mail
+teléfono
+imagen
+perfil: admin o user
+domicilio
+localidad
 
-* Vista Index: agregar imagen de fondo, footer. Responsive. --> Realizado: SI (Falta responsive en Mobil).
-* Vista productos: agregar imagen de fondo, footer. Responsive. falta Header. --> Realizado: SI.
-* Vista login: agregar imagen de fondo, footer. Responsive: falta header. --> Realizado: SI.
-* Vista registro: agregar imagen de fondo, footer. Responsive. --> Realizado: SI.
-* Vista carrito: footer, Responsive: falta header. --> Realizado: SI.
-* Vista cargaProducto: footer, Responsive: falta todo. --> Realizado: SI.
-* Vista profileUsuario: footer. Responsive: falta todo. Sin foto. --> Realizado: SI.
-* Vista prolile Administrador: botones de más, sin foto, responsive falta todo. --> Realizado: SI.
+- Campos a presentar en el JSON:
+
+id
+nombre
+descripción
+imagen
+precio
+
+tareas ejecutadas y por efectuar próximamente:
+
+* Vista productos: falta editar las referencias a Eliminar y Editar producto con su CSS y que se vea únicamente si el usuario está loggeado con perfil "Administrador".
+* Vista login: para próximo sprint quedaría configurada.
+* Vista registro: para próximo sprint quedaría configurada.
+* Vista carrito: no require cambios por ahora.
+* Vista cargaProducto: requiere CSS el botón de seleccionar Archivo para la foto y que pueda mostrar el producto recién cargado cuando se actualiza la página (ver para el próximo sprint).
+* Vista profileUsuario: no le hicimos cambios. 
+* Vista prolile Administrador: quedó con 4 botones de los cuales 2 de ellos están linkeados a productos para editar o eliminar un pack.
 
