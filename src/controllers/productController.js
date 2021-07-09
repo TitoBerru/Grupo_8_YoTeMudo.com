@@ -13,7 +13,7 @@ const productController = {
     //Para mostrar todo el listado de productos
 
     listado: (req,res) => {
-      res.render ('products/producto',{products:products,users:users});
+    res.render ('products/producto',{products:products,users:users});
     },
 
     //Para mostrar el detalle de uno de los productos 
@@ -30,14 +30,15 @@ const productController = {
 			}
             
 		}
-      res.render ('products/carrito', {packBuscado:packB});
+    //res.send(packB);
+    res.render ('products/carrito', {packBuscado:packB});
     },
     carga: (req,res) => {     //create
         res.render ('products/cargaProducto');
     },
 
     edicion:  (req,res) => {
-       
+    
         let idProductoEditado = req.params;	
         for(let i=0;i<products.length;i++){
             if (products[i].id==idProductoEditado.id){
@@ -55,7 +56,7 @@ const productController = {
 		for(let i=0;i<products.length;i++){
 	        if (products[i].id == idParaCambiar){
             
-                     
+        
 		 	products[i].numeroDePack = ProductoAModificar.numeroDePack;
 		 	products[i].radio = ProductoAModificar.radio;
             products[i].superficie = ProductoAModificar.superficie;

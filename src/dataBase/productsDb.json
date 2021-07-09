@@ -5,7 +5,7 @@
   "radio": "",
   "costo": "20000",
   "medidas": "10",
-  "imagen": "img-flota-00_1.jpg",
+  "imagen": "flota-00_1.jpg",
   "superficie": "",
   "precio": ""
  },
@@ -15,7 +15,7 @@
   "radio": "20",
   "costo": "20000",
   "medidas": "10",
-  "imagen": "img-flota-00_1.jpg"
+  "imagen": "flota-00_1.jpg"
  },
  {
   "id": 10,
@@ -23,7 +23,7 @@
   "radio": "30",
   "costo": "10000",
   "medidas": "5",
-  "imagen": "img-flota-00.jpg",
+  "imagen": "flota-00.jpg",
   "superficie": "5",
   "precio": "3000"
  },
@@ -33,7 +33,7 @@
   "radio": "",
   "costo": "40000",
   "medidas": "15",
-  "imagen": "img-flota-01.jpg",
+  "imagen": "flota-01.jpg",
   "superficie": "",
   "precio": ""
  }
