@@ -49,30 +49,29 @@ const productController = {
         res.render('products/edicionProducto',{productoEncontrado: productoEncontrado});
     },
 
-    actualizar: (req,res) => {
+    actualizar: (req,res) => {     
         let idParaCambiar = req.params.id;
-        let ProductoAModificar = req.body;
-        let nombreImagen=req.file.filename;
-
+        let ProductoAModificar = req.body;    
 		for(let i=0;i<products.length;i++){
 	        if (products[i].id == idParaCambiar){
-            
-        
-		 	products[i].numeroDePack = ProductoAModificar.numeroDePack;
-		 	products[i].radio = ProductoAModificar.radio;
-            products[i].superficie = ProductoAModificar.superficie;
-	        products[i].precio = ProductoAModificar.precio;
-            products[i].superficie = ProductoAModificar.superficie;
-            products[i].imagen = nombreImagen;
-
-		//var productoActualizado = products[i];
-		break;
-	 	    }
-	    }
-		fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-		res.render('products/carrito/'+req.params.id, {products:products,users:users})
-    //  res.send(req.body)
-    },
+		  	    products[i].numeroDePack = ProductoAModificar.numeroDePack;
+		  	    products[i].radio = ProductoAModificar.radio;
+                products[i].superficie = ProductoAModificar.superficie;
+                products[i].precio = ProductoAModificar.precio;
+                products[i].superficie = ProductoAModificar.superficie;
+                if (req.file == null){
+                        products[i].imagen = products[i].imagen;
+                    }else {
+                        products[i].imagen =req.file.filename;
+                    }
+        		// var productoActualizado = products[i];
+		        break;  
+            }       
+        }
+		 fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
+		 res.render('products/producto', {products:products,users:users})
+   
+        },
 
     store: (req, res) => {
         let nombreImagen=req.file.filename;
