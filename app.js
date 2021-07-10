@@ -16,7 +16,7 @@ app.use(methodOverride('_method')); // necesario para transformar los POST en PU
 
 // *** Config de Vistas ***
 app.set('view engine','ejs');
-app.set('views', path.join(__dirname, '/src/views'));
+app.set('views', path.join(__dirname, '/views'));
 
 // ** RUTAS ** 
 const mainRoutes = require ('./src/routes/mainRoutes');
