@@ -74,7 +74,12 @@ const productController = {
         },
 
     store: (req, res) => {
-        let nombreImagen=req.file.filename;
+        if (req.file == null){
+           var nombreImagen = 'avatar.jpg'
+        }else {
+            var nombreImagen = req.file.filename
+        }
+       
 		let idNuevo = products[products.length-1].id + 1;
 		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{imagen:nombreImagen});
 		products.push(nuevoObjeto);

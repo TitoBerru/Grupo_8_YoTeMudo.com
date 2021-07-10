@@ -28,5 +28,29 @@
   "superficie": "99",
   "precio": "99",
   "imagen": "img-1491579583-yumminkysocialmedia02_83111.png"
+ },
+ {
+  "id": 5,
+  "numeroDePack": "1",
+  "radio": "10",
+  "precio": "10000",
+  "medidas": "25",
+  "imagen": "img-flota-00.jpg"
+ },
+ {
+  "id": 6,
+  "numeroDePack": "99999999",
+  "radio": "99999999",
+  "precio": "9999999",
+  "medidas": "9999999",
+  "imagen": "avatar.jpg"
+ },
+ {
+  "id": 7,
+  "numeroDePack": "88888888888888",
+  "radio": "888888888888888",
+  "precio": "88888888888888",
+  "medidas": "888888888888888888",
+  "imagen": "img-flota-02.jpg"
  }
 ]
