@@ -84,7 +84,7 @@ const productController = {
 		let nuevoObjeto =  Object.assign({id: idNuevo},req.body,{imagen:nombreImagen});
 		products.push(nuevoObjeto);
    	    fs.writeFileSync(productsFilePath, JSON.stringify(products,null, ' '));
-           res.render('products/producto', {products:products,users:users})
+            res.render('products/producto', {products:products,users:users})
 	},
 
     destroy : (req, res) => {
