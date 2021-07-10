@@ -17,14 +17,14 @@
    
       <div class="cont-button">
         <div class="carrito-tu-pack">
-          <a href"#" class="botonPack">
+          <a href="#" class="botonPack">
             <button class="carrito-pack">Viajo Solo
               <span class="icon"></span>
             </button>
           </a>
         </div>
         <div class="carrito-tu-pack">
-          <a href"#" class="botonPack">
+          <a href="#" class="botonPack">
             <button class="carrito-pack">Comparto Viaje
               <span class="icon"></span>
             </button>
@@ -50,13 +50,12 @@
                 </a>
               </div>
               <div class="carrito-tu-pack">
-                <button class="carrito-pack"  type="submit" class="action-button delete">
-                  <form action="/products/<%=products[i].id %>?_method=DELETE" method="POST" onsubmit="return confirm('Esta seguro que desea eliminarlo?');">
+                <form action="/products/<%=products[i].id %>?_method=DELETE" method="POST" onsubmit="return confirm('Esta seguro que desea eliminarlo?');">
+                  <button class="carrito-pack"  type="submit" class="action-button delete">
                     ELIMINAR
-                  
-                </button>
-              </a>
-            </div>
+                  </button>
+                </form>
+              </div>
               <span><a href="/products/carrito/<%=products[i].id%>"><img src="/img/carrito1.png" alt="" class="btn-precio "></a></span>
             </div>
           <% } %>

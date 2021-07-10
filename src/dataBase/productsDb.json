@@ -1,56 +1,26 @@
 [
  {
-  "id": 2,
-  "numeroDePack": "45",
-  "radio": "45",
-  "costo": "20000",
-  "medidas": "2",
-  "superficie": "45",
-  "precio": "4500",
-  "imagen": "img-flota-04.jpg"
- },
- {
-  "id": 3,
-  "numeroDePack": "4",
-  "radio": "4",
-  "costo": "30000",
-  "medidas": "3",
-  "imagen": "flota-00_2.jpg",
-  "superficie": "4",
-  "precio": "4"
- },
- {
-  "id": 4,
-  "numeroDePack": "99",
-  "radio": "99",
-  "costo": "40000",
-  "medidas": "4",
-  "superficie": "99",
-  "precio": "99",
-  "imagen": "img-1491579583-yumminkysocialmedia02_83111.png"
- },
- {
   "id": 5,
-  "numeroDePack": "1",
+  "numeroDePack": "5",
   "radio": "10",
   "precio": "10000",
-  "medidas": "25",
-  "imagen": "img-flota-00.jpg"
+  "imagen": "img-img-flota-00.jpg",
+  "superficie": "23"
  },
  {
   "id": 6,
-  "numeroDePack": "99999999",
-  "radio": "99999999",
-  "precio": "9999999",
-  "medidas": "9999999",
-  "imagen": "avatar.jpg"
+  "numeroDePack": "6",
+  "radio": "10",
+  "precio": "7800",
+  "imagen": "img-img-flota-00_1.jpg",
+  "superficie": "6"
  },
  {
   "id": 7,
-  "numeroDePack": "88888888888888",
-  "radio": "888888888888888",
-  "precio": "88888888888888",
-  "medidas": "888888888888888888",
-  "imagen": "img-flota-02.jpg"
+  "numeroDePack": "7",
+  "radio": "30",
+  "precio": "15700",
+  "imagen": "img-flota-02.jpg",
+  "superficie": "4"
  }
 ]
